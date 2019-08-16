@@ -159,9 +159,6 @@ ${BASE}/sync-projects.sh -j ${CPUS} -d \
 if [ "$version" = "master" ] || [ "$version" = "p" ]; then
 	echo "unshallow kernel"
 	${BASE}/sync-projects.sh -j ${CPUS} -d kernel/linaro/hisilicon-5.4
-elif [ "$version" = "o" ]; then
-	echo "unshallow 4.9 kernel"
-	${BASE}/sync-projects.sh -j ${CPUS} -d kernel/linaro/hisilicon
 else
 	echo "unknown kernel version!"
 fi
