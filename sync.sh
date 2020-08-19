@@ -157,8 +157,8 @@ ${BASE}/sync-projects.sh -j ${CPUS} -d \
                         device/linaro/kmgk
 
 if [ "$version" = "master" ] || [ "$version" = "p" ]; then
-	echo "unshallow 4.14 kernel"
-	${BASE}/sync-projects.sh -j ${CPUS} -d kernel/linaro/hisilicon-4.14
+	echo "unshallow kernel"
+	${BASE}/sync-projects.sh -j ${CPUS} -d kernel/linaro/hisilicon-5.4
 elif [ "$version" = "o" ]; then
 	echo "unshallow 4.9 kernel"
 	${BASE}/sync-projects.sh -j ${CPUS} -d kernel/linaro/hisilicon
